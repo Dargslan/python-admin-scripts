@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dargslan-toolkit"
-version = "1.20.0"
+version = "1.20.1"
 description = "Complete Linux sysadmin toolkit — 118 CLI tools for monitoring, security, networking, storage, and DevOps. One install, all tools."
 readme = "README.md"
 license = {text = "MIT"}

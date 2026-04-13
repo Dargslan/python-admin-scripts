@@ -25,7 +25,7 @@ Cheat Sheets: https://dargslan.com/cheat-sheets
 Blog: https://dargslan.com/blog
 """
 
-__version__ = "1.20.0"
+__version__ = "1.20.1"
 __author__ = "Dargslan"
 __url__ = "https://dargslan.com"
 

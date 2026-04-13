@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-security-scan"
+version = "1.0.0"
+description = "Basic Linux security scanner — check SSH config, file permissions, SUID binaries, world-writable files, and kernel parameters"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["security", "scanner", "linux", "sysadmin", "hardening", "ssh", "suid", "devops", "audit"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux & DevOps Books" = "https://dargslan.com/books"
+"Blog & Tutorials" = "https://dargslan.com/blog"
+
+[project.scripts]
+dargslan-secscan = "dargslan_security_scan.cli:main"

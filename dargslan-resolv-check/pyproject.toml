@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-resolv-check"
+version = "1.0.0"
+description = "DNS resolver configuration checker for Linux. Validates resolv.conf, nameservers, search domains, and DNS resolution performance."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["dns", "resolv", "nameserver", "resolver", "linux", "dargslan"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Topic :: System :: Systems Administration"]
+
+[project.scripts]
+dargslan-resolv = "dargslan_resolv_check.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

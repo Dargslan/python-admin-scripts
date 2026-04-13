@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-sysinfo"
+version = "1.0.0"
+description = "Linux system information tool — CPU, memory, disk, network, and process monitoring for sysadmins"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["linux", "sysinfo", "system-monitor", "cpu", "memory", "disk", "network", "sysadmin", "devops"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan/dargslan-sysinfo"
+"Bug Tracker" = "https://github.com/Dargslan/dargslan-sysinfo/issues"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux Books" = "https://dargslan.com/books"
+
+[project.scripts]
+dargslan-sysinfo = "dargslan_sysinfo.cli:main"

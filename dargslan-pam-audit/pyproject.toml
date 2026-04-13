@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-pam-audit"
+version = "1.0.0"
+description = "PAM configuration auditor -- audit PAM stack, check module security, password policy, and auth settings."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["linux", "pam,authentication,security,audit,sysadmin"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.scripts]
+dargslan-pam = "dargslan_pam_audit.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

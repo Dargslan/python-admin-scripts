@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-netfilter-check"
+version = "1.0.0"
+description = "Netfilter and Connection Tracking Analyzer"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["netfilter", "conntrack", "firewall", "iptables", "nftables", "connection"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Systems Administration",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://dargslan.com"
+
+[project.scripts]
+dargslan-netfilter-check = "dargslan_netfilter_check.cli:main"

@@ -1,0 +1,144 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-toolkit"
+version = "1.18.1"
+description = "Complete Linux sysadmin toolkit — 107 CLI tools for monitoring, security, networking, storage, and DevOps. One install, all tools."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["linux", "sysadmin", "devops", "toolkit", "monitoring", "security", "docker", "network", "firewall", "log-parser"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Networking",
+    "Topic :: Security",
+]
+dependencies = [
+    "dargslan-sysinfo>=1.0.0",
+    "dargslan-log-parser>=1.0.0",
+    "dargslan-net-scanner>=1.0.0",
+    "dargslan-firewall-audit>=1.0.0",
+    "dargslan-docker-health>=1.0.0",
+    "dargslan-ssl-checker>=1.0.0",
+    "dargslan-disk-cleaner>=1.0.0",
+    "dargslan-process-monitor>=1.0.0",
+    "dargslan-cron-audit>=1.0.0",
+    "dargslan-backup-monitor>=1.0.0",
+    "dargslan-user-audit>=1.0.0",
+    "dargslan-service-monitor>=1.0.0",
+    "dargslan-port-monitor>=1.0.0",
+    "dargslan-log-rotate>=1.0.0",
+    "dargslan-security-scan>=1.0.0",
+    "dargslan-dns-check>=1.0.0",
+    "dargslan-container-audit>=1.0.0",
+    "dargslan-nginx-analyzer>=1.0.0",
+    "dargslan-mysql-health>=1.0.0",
+    "dargslan-systemd-timer>=1.0.0",
+    "dargslan-ssh-audit>=1.0.0",
+    "dargslan-ip-geo>=1.0.0",
+    "dargslan-bandwidth-monitor>=1.0.0",
+    "dargslan-package-audit>=1.0.0",
+    "dargslan-swap-analyzer>=1.0.0",
+    "dargslan-kernel-check>=1.0.0",
+    "dargslan-apache-analyzer>=1.0.0",
+    "dargslan-redis-health>=1.0.0",
+    "dargslan-postgres-health>=1.0.0",
+    "dargslan-git-audit>=1.0.0",
+    "dargslan-cgroup-monitor>=1.0.0",
+    "dargslan-journald-analyzer>=1.0.0",
+    "dargslan-lvm-check>=1.0.0",
+    "dargslan-nfs-health>=1.0.0",
+    "dargslan-cert-manager>=1.0.0",
+    "dargslan-iptables-export>=1.0.0",
+    "dargslan-disk-benchmark>=1.0.0",
+    "dargslan-systemd-analyze>=1.0.0",
+    "dargslan-memory-profiler>=1.0.0",
+    "dargslan-tcp-monitor>=1.0.0",
+    "dargslan-grub-check>=1.0.0",
+    "dargslan-dns-resolver>=1.0.0",
+    "dargslan-raid-monitor>=1.0.0",
+    "dargslan-audit-log>=1.0.0",
+    "dargslan-socket-stats>=1.0.0",
+    "dargslan-env-audit>=1.0.0",
+    "dargslan-file-integrity>=1.0.0",
+    "dargslan-uptime-report>=1.0.0",
+    "dargslan-cron-parser>=1.0.0",
+    "dargslan-systemd-unit>=1.0.0",
+    "dargslan-disk-quota>=1.0.0",
+    "dargslan-login-tracker>=1.0.0",
+    "dargslan-network-latency>=1.0.0",
+    "dargslan-process-killer>=1.0.0",
+    "dargslan-mount-monitor>=1.0.0",
+    "dargslan-user-sessions>=1.0.0",
+    "dargslan-log-stats>=1.0.0",
+    "dargslan-selinux-check>=1.0.0",
+    "dargslan-hostname-info>=1.0.0",
+    "dargslan-sysctl-audit>=1.0.0",
+    "dargslan-tmpfile-cleaner>=1.0.0",
+    "dargslan-inode-monitor>=1.0.0",
+    "dargslan-fstab-check>=1.0.0",
+    "dargslan-pam-audit>=1.0.0",
+    "dargslan-timezone-info>=1.0.0",
+    "dargslan-apt-history>=1.0.0",
+    "dargslan-crontab-backup>=1.0.0",
+    "dargslan-ulimit-check>=1.0.0",
+    "dargslan-sudoers-audit>=1.0.0",
+    "dargslan-interface-monitor>=1.0.0",
+    "dargslan-kernel-module>=1.0.0",
+    "dargslan-motd-manager>=1.0.0",
+    "dargslan-ssh-hardening>=1.0.0",
+    "dargslan-swap-manager>=1.0.0",
+    "dargslan-locale-check>=1.0.0",
+    "dargslan-ntp-check>=1.0.0",
+    "dargslan-resolv-check>=1.0.0",
+    "dargslan-login-history>=1.0.0",
+    "dargslan-apt-check>=1.0.0",
+    "dargslan-bash-alias>=1.0.0",
+    "dargslan-disk-health>=1.0.0",
+    "dargslan-tmpfile-clean>=1.0.0",
+    "dargslan-zombie-kill>=1.0.0",
+    "dargslan-route-check>=1.0.0",
+    "dargslan-netfilter-check>=1.0.0",
+    "dargslan-lastlog-audit>=1.0.0",
+    "dargslan-proc-monitor>=1.0.0",
+    "dargslan-passwd-audit>=1.0.0",
+    "dargslan-service-restart>=1.0.0",
+    "dargslan-cgroup-audit>=1.0.0",
+    "dargslan-dmesg-analyzer>=1.0.0",
+    "dargslan-hostname-check>=1.0.0",
+    "dargslan-journal-export>=1.0.0",
+    "dargslan-sshkey-audit>=1.0.0",
+    "dargslan-arp-monitor>=1.0.0",
+    "dargslan-io-monitor>=1.0.0",
+    "dargslan-acl-check>=1.0.0",
+    "dargslan-coredump-check>=1.0.0",
+    "dargslan-entropy-check>=1.0.0",
+    "dargslan-load-average>=1.0.0",
+    "dargslan-xfs-check>=1.0.0",
+    "dargslan-yum-history>=1.0.0",
+    "dargslan-at-scheduler>=1.0.0",
+    "dargslan-bridge-monitor>=1.0.0",
+    "dargslan-apparmor-check>=1.0.0",
+    "dargslan-lsof-audit>=1.0.0",
+    "dargslan-modprobe-check>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux & DevOps Books" = "https://dargslan.com/books"
+"Blog & Tutorials" = "https://dargslan.com/blog"
+
+[project.scripts]
+dargslan = "dargslan_toolkit.cli:main"

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-audit-log"
+version = "1.0.1"
+description = "Linux audit log analyzer. Parses auditd logs, tracks file access, command execution, user authentication, and security events."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["audit", "auditd", "log", "security", "linux", "dargslan"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Topic :: System :: Systems Administration"]
+
+[project.scripts]
+dargslan-auditlog = "dargslan_audit_log.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

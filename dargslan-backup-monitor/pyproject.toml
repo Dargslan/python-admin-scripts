@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-backup-monitor"
+version = "1.0.0"
+description = "Monitor backup status, check backup freshness, and verify backup integrity on Linux servers"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["backup", "monitor", "linux", "sysadmin", "devops", "server", "disaster-recovery", "rsync"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux & DevOps Books" = "https://dargslan.com/books"
+"Blog & Tutorials" = "https://dargslan.com/blog"
+
+[project.scripts]
+dargslan-backup = "dargslan_backup_monitor.cli:main"

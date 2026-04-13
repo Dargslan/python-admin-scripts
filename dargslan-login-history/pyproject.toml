@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-login-history"
+version = "1.0.0"
+description = "Login history analyzer for Linux. Parses wtmp/btmp for successful and failed logins, session durations, and suspicious activity."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["login", "history", "wtmp", "btmp", "auth", "dargslan"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Topic :: System :: Systems Administration"]
+
+[project.scripts]
+dargslan-logins = "dargslan_login_history.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

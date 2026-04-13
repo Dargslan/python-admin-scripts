@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-systemd-timer"
+version = "1.0.1"
+description = "Systemd timer analyzer for Linux. Lists active timers, next trigger times, associated services, and timer calendar expressions."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["systemd", "timer", "scheduler", "cron", "linux", "dargslan"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Topic :: System :: Systems Administration"]
+
+[project.scripts]
+dargslan-timer = "dargslan_systemd_timer.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-ip-geo"
+version = "1.0.0"
+description = "IP geolocation and WHOIS lookup tool — find country, ISP, abuse contact, and network info for any IP address"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["ip", "geolocation", "whois", "network", "security", "linux", "sysadmin", "devops"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Networking",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux & DevOps Books" = "https://dargslan.com/books"
+
+[project.scripts]
+dargslan-ip = "dargslan_ip_geo.cli:main"

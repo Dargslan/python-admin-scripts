@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-swap-manager"
+version = "1.0.0"
+description = "Linux swap space analyzer. Reports swap usage, swappiness settings, swap file vs partition info, and memory pressure indicators."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["swap", "memory", "swappiness", "linux", "sysadmin", "dargslan"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Topic :: System :: Systems Administration"]
+
+[project.scripts]
+dargslan-swap = "dargslan_swap_manager.cli:main"
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"

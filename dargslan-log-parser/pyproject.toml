@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-log-parser"
+version = "1.0.0"
+description = "Linux log file parser and analyzer — parse syslog, auth.log, nginx, and Apache logs with pattern matching"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["linux", "log-parser", "syslog", "auth-log", "nginx", "apache", "security", "devops"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Logging",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan/dargslan-log-parser"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux Books" = "https://dargslan.com/books"
+
+[project.scripts]
+dargslan-logs = "dargslan_log_parser.cli:main"

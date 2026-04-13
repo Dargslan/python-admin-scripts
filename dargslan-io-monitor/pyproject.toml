@@ -1,0 +1,31 @@
+[build-system]
+  requires = ["setuptools>=61.0", "wheel"]
+  build-backend = "setuptools.build_meta"
+
+  [project]
+  name = "dargslan-io-monitor"
+  version = "1.0.0"
+  description = "Disk I/O performance monitor — read/write throughput, IOPS, latency"
+  readme = "README.md"
+  license = {text = "MIT"}
+  requires-python = ">=3.7"
+  authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+  keywords = ["linux", "io", "disk", "performance", "monitor", "iops", "sysadmin"]
+  classifiers = [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Topic :: System :: Systems Administration",
+  ]
+
+  [project.urls]
+  Homepage = "https://dargslan.com"
+  Documentation = "https://dargslan.com/blog"
+  "Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+  "Linux & DevOps Books" = "https://dargslan.com/books"
+
+  [project.scripts]
+  dargslan-io-monitor = "dargslan_io_monitor.main:main"
+  

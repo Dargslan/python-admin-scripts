@@ -1,20 +1,20 @@
 """
 dargslan-toolkit — The Complete Linux Sysadmin Toolkit
 
-108 professional CLI tools for Linux server management, security auditing,
+118 professional CLI tools for Linux server management, security auditing,
 performance monitoring, and DevOps operations. One install. All tools.
 
 Categories:
-  - System Monitoring & Performance (14 tools)
-  - Security & Hardening (20 tools)
-  - Networking & DNS (17 tools)
+  - System Monitoring & Performance (16 tools)
+  - Security & Hardening (23 tools)
+  - Networking & DNS (19 tools)
   - Firewall & Network Security (3 tools)
-  - Log Analysis (7 tools)
+  - Log Analysis (8 tools)
   - System Configuration (17 tools)
-  - Storage & Filesystems (11 tools)
+  - Storage & Filesystems (12 tools)
   - DevOps & Containers (5 tools)
   - Database Health (3 tools)
-  - Package & Service Management (9 tools)
+  - Package & Service Management (10 tools)
   - System Diagnostics (2 tools)
 
 Install: pip install dargslan-toolkit
@@ -25,11 +25,11 @@ Cheat Sheets: https://dargslan.com/cheat-sheets
 Blog: https://dargslan.com/blog
 """
 
-__version__ = "1.19.0"
+__version__ = "1.20.0"
 __author__ = "Dargslan"
 __url__ = "https://dargslan.com"
 
-TOOL_COUNT = 108
+TOOL_COUNT = 118
 CATEGORIES = {
     "monitoring": [
         "dargslan-sysinfo", "dargslan-process-monitor", "dargslan-proc-monitor",
@@ -37,6 +37,7 @@ CATEGORIES = {
         "dargslan-swap-manager", "dargslan-uptime-report", "dargslan-inode-monitor",
         "dargslan-mount-monitor", "dargslan-zombie-kill", "dargslan-process-killer",
         "dargslan-io-monitor", "dargslan-user-sessions",
+        "dargslan-cpu-freq", "dargslan-thermal-monitor",
     ],
     "security": [
         "dargslan-firewall-audit", "dargslan-ssh-hardening", "dargslan-ssh-audit",
@@ -46,6 +47,7 @@ CATEGORIES = {
         "dargslan-login-tracker", "dargslan-lastlog-audit", "dargslan-passwd-audit",
         "dargslan-security-scan", "dargslan-selinux-check", "dargslan-user-audit",
         "dargslan-apparmor-check", "dargslan-lsof-audit",
+        "dargslan-ipv6-audit", "dargslan-fail2ban-audit", "dargslan-crypt-audit",
     ],
     "networking": [
         "dargslan-net-scanner", "dargslan-port-monitor", "dargslan-dns-check",
@@ -54,6 +56,7 @@ CATEGORIES = {
         "dargslan-tcp-monitor", "dargslan-socket-stats", "dargslan-network-latency",
         "dargslan-route-check", "dargslan-hostname-check", "dargslan-hostname-info",
         "dargslan-bridge-monitor", "dargslan-ethtool-check",
+        "dargslan-bonding-check", "dargslan-snmp-check",
     ],
     "firewall": [
         "dargslan-iptables-export", "dargslan-netfilter-check", "dargslan-arp-monitor",
@@ -61,7 +64,7 @@ CATEGORIES = {
     "logs": [
         "dargslan-log-parser", "dargslan-journald-analyzer", "dargslan-journal-export",
         "dargslan-dmesg-analyzer", "dargslan-log-rotate", "dargslan-log-stats",
-        "dargslan-nginx-analyzer",
+        "dargslan-nginx-analyzer", "dargslan-syslog-monitor",
     ],
     "config": [
         "dargslan-crontab-backup", "dargslan-cron-audit", "dargslan-cron-parser",
@@ -75,7 +78,7 @@ CATEGORIES = {
         "dargslan-disk-cleaner", "dargslan-disk-benchmark", "dargslan-disk-quota",
         "dargslan-disk-health", "dargslan-lvm-check", "dargslan-raid-monitor",
         "dargslan-nfs-health", "dargslan-tmpfile-cleaner", "dargslan-tmpfile-clean",
-        "dargslan-backup-monitor", "dargslan-xfs-check",
+        "dargslan-backup-monitor", "dargslan-xfs-check", "dargslan-btrfs-check",
     ],
     "devops": [
         "dargslan-docker-health", "dargslan-container-audit", "dargslan-cgroup-monitor",
@@ -88,6 +91,7 @@ CATEGORIES = {
         "dargslan-apt-history", "dargslan-apt-check", "dargslan-package-audit",
         "dargslan-service-monitor", "dargslan-service-restart", "dargslan-apache-analyzer",
         "dargslan-cert-manager", "dargslan-bash-alias", "dargslan-yum-history",
+        "dargslan-numa-check",
     ],
     "diagnostics": [
         "dargslan-coredump-check", "dargslan-entropy-check",

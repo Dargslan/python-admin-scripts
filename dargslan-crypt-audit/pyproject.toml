@@ -1,0 +1,32 @@
+[build-system]
+  requires = ["setuptools>=61.0", "wheel"]
+  build-backend = "setuptools.build_meta"
+
+  [project]
+  name = "dargslan-crypt-audit"
+  version = "1.0.0"
+  description = "LUKS and dm-crypt encryption auditor — check encrypted volumes, key slots, cipher strength, and unlock status."
+  readme = "README.md"
+  license = {text = "MIT"}
+  requires-python = ">=3.7"
+  authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+  keywords = ["linux", "luks", "encryption", "dm-crypt", "security", "storage", "sysadmin"]
+  classifiers = [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Topic :: Security",
+  ]
+
+  [project.urls]
+  Homepage = "https://dargslan.com"
+  Documentation = "https://dargslan.com/blog"
+  Repository = "https://github.com/Dargslan/python-admin-scripts"
+  "Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+  "Linux & DevOps Books" = "https://dargslan.com/books"
+
+  [project.scripts]
+  dargslan-crypt-audit = "dargslan_crypt_audit.cli:main"
+  

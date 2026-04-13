@@ -1,0 +1,32 @@
+[build-system]
+  requires = ["setuptools>=61.0", "wheel"]
+  build-backend = "setuptools.build_meta"
+
+  [project]
+  name = "dargslan-bonding-check"
+  version = "1.0.0"
+  description = "Network bonding and teaming monitor — check bond mode, slave status, link aggregation, and failover configuration."
+  readme = "README.md"
+  license = {text = "MIT"}
+  requires-python = ">=3.7"
+  authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+  keywords = ["linux", "bonding", "teaming", "lacp", "network", "failover", "sysadmin"]
+  classifiers = [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Topic :: System :: Networking",
+  ]
+
+  [project.urls]
+  Homepage = "https://dargslan.com"
+  Documentation = "https://dargslan.com/blog"
+  Repository = "https://github.com/Dargslan/python-admin-scripts"
+  "Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+  "Linux & DevOps Books" = "https://dargslan.com/books"
+
+  [project.scripts]
+  dargslan-bonding-check = "dargslan_bonding_check.cli:main"
+  

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dargslan-toolkit"
-version = "1.18.1"
-description = "Complete Linux sysadmin toolkit — 107 CLI tools for monitoring, security, networking, storage, and DevOps. One install, all tools."
+version = "1.19.0"
+description = "Complete Linux sysadmin toolkit — 108 CLI tools for monitoring, security, networking, storage, and DevOps. One install, all tools."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.7"
@@ -130,6 +130,7 @@ dependencies = [
     "dargslan-apparmor-check>=1.0.0",
     "dargslan-lsof-audit>=1.0.0",
     "dargslan-modprobe-check>=1.0.0",
+    "dargslan-ethtool-check>=1.0.0",
 ]
 
 [project.urls]

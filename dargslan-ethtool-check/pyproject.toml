@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dargslan-ethtool-check"
+version = "1.0.0"
+description = "Network interface diagnostics — check link speed, duplex mode, driver info, offload settings, and NIC capabilities for all interfaces."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "Dargslan", email = "info@dargslan.com"}]
+keywords = ["linux", "network", "ethtool", "nic", "interface", "sysadmin", "diagnostics", "speed", "duplex"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://dargslan.com"
+Documentation = "https://dargslan.com/blog"
+Repository = "https://github.com/Dargslan/python-admin-scripts"
+"Free Cheat Sheets" = "https://dargslan.com/cheat-sheets"
+"Linux & DevOps Books" = "https://dargslan.com/books"
+
+[project.scripts]
+dargslan-ethtool-check = "dargslan_ethtool_check.cli:main"

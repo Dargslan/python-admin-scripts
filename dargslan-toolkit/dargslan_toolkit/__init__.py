@@ -1,13 +1,13 @@
 """
 dargslan-toolkit — The Complete Linux Sysadmin Toolkit
 
-107 professional CLI tools for Linux server management, security auditing,
+108 professional CLI tools for Linux server management, security auditing,
 performance monitoring, and DevOps operations. One install. All tools.
 
 Categories:
   - System Monitoring & Performance (14 tools)
   - Security & Hardening (20 tools)
-  - Networking & DNS (16 tools)
+  - Networking & DNS (17 tools)
   - Firewall & Network Security (3 tools)
   - Log Analysis (7 tools)
   - System Configuration (17 tools)
@@ -25,11 +25,11 @@ Cheat Sheets: https://dargslan.com/cheat-sheets
 Blog: https://dargslan.com/blog
 """
 
-__version__ = "1.18.1"
+__version__ = "1.19.0"
 __author__ = "Dargslan"
 __url__ = "https://dargslan.com"
 
-TOOL_COUNT = 107
+TOOL_COUNT = 108
 CATEGORIES = {
     "monitoring": [
         "dargslan-sysinfo", "dargslan-process-monitor", "dargslan-proc-monitor",
@@ -53,7 +53,7 @@ CATEGORIES = {
         "dargslan-interface-monitor", "dargslan-ssl-checker", "dargslan-ip-geo",
         "dargslan-tcp-monitor", "dargslan-socket-stats", "dargslan-network-latency",
         "dargslan-route-check", "dargslan-hostname-check", "dargslan-hostname-info",
-        "dargslan-bridge-monitor",
+        "dargslan-bridge-monitor", "dargslan-ethtool-check",
     ],
     "firewall": [
         "dargslan-iptables-export", "dargslan-netfilter-check", "dargslan-arp-monitor",
